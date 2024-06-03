@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #1e1e1e;
+}
+.hero-section {
+	background: none;
+	/*  */
+	padding: 50px 100px;
+}
+
+/* Main */
+main h1.hero-title,
+main p.hero-subtitle {
+	text-align: left;
+	/* color: #fff; */
+	color: #eaeaea;
+}
+main h1.hero-title {
+	margin-bottom: 70px;
+}
+
+.flex-cont {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	/*  */
+	margin-bottom: 70px;
+}
+.ellipse-dots {
+	border-radius: 10px;
+	outline: 1px solid #7e7e7e;
+	padding: 10px 20px;
+	text-align: left;
+	display: inline-block;
+	color: #fff;
+	/*  */
+	cursor: pointer;
+}
+
+.icons-cont {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.icons-cont span img {
+	cursor: pointer;
+	padding: 5px;
+	/*  */
+	transition: all 0.2s ease-in;
+}
+.icons-cont span img:hover {
+	/* box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4); */
+	outline: 0.1px solid #7e7e7e;
+}
+
+/* Media query */
+@media only screen and (max-width: 1000px) {
+	.flex-cont {
+		align-items: flex-start;
+	}
+}
+@media only screen and (max-width: 769px) {
+	.hero-section {
+		background: none;
+		/*  */
+		padding: 50px 50px;
+	}
+	main h1.hero-title {
+		font-size: 36px;
+		margin-bottom: 50px;
+	}
+	main p.hero-subtitle {
+		font-size: 14px;
+	}
+	.flex-cont {
+		margin-bottom: 40px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.hero-section {
+		padding: 40px 20px;
+	}
+	.icons-cont {
+		gap: 1.5rem;
+	}
+}
