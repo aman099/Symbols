@@ -51,13 +51,14 @@ main h1.hero-title {
 	justify-content: space-between;
 	align-items: center;
 }
-.icons-cont span img {
+.icons-cont aside img {
+	display: block;
 	cursor: pointer;
 	padding: 5px;
 	/*  */
 	transition: all 0.2s ease-in;
 }
-.icons-cont span img:hover {
+.icons-cont aside img:hover {
 	/* box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4); */
 	outline: 0.1px solid #7e7e7e;
 }
